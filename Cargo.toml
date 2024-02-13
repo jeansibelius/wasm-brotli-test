@@ -1,0 +1,15 @@
+[package]
+name = "wasm-brotli"
+version = "0.1.0"
+edition = "2021"
+authors = ["Rafael Linnankoski <rafaellinnankoski@gmail.com>"]
+license = "MIT"
+description = "Compress with brotli using wasm"
+repository = "https://github.com/jeansibelius/wasm-brotli-with-rust"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+brotli = "3.4.0"
+wasm-bindgen = "0.2"

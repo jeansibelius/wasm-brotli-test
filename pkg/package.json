@@ -1,0 +1,22 @@
+{
+  "name": "wasm-brotli",
+  "collaborators": [
+    "Rafael Linnankoski <rafaellinnankoski@gmail.com>"
+  ],
+  "description": "Compress with brotli using wasm",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeansibelius/wasm-brotli-test"
+  },
+  "files": [
+    "wasm_brotli_bg.wasm",
+    "wasm_brotli.js",
+    "wasm_brotli.d.ts"
+  ],
+  "module": "wasm_brotli.js",
+  "types": "wasm_brotli.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

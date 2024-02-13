@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Brotli compression with Rust to WASM example</title>
+  </head>
+  <body>
+    <script type="module">
+      import init, { compress } from "./pkg/wasm_brotli.js";
+      init().then(() => {
+        const textEncoder = new TextEncoder();
+        const input = "Hello world";
+        const uncompressedData = textEncoder.encode(input);
+        const compressedData = compress(uncompressedData);
+        console.log("compressedData:", compressedData);
+      });
+    </script>
+  </body>
+</html>
