@@ -2,6 +2,8 @@
 
 A simple [WebAssembly (wasm)](https://developer.mozilla.org/en-US/docs/WebAssembly) module that allows compression with Brotli.
 
+For details, see the related [dev log in my blog](https://littlebitof.xyz/blog/simple-brotli-webassembly-module-with-rust/).
+
 References:
 
 - https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_Wasm
